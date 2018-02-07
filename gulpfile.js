@@ -16,8 +16,8 @@ gulp.task('css', function() {
 gulp
     .src([
         './src/styles/main.less',
-        './src/styles/**/*.css'
-        // './node_modules/bootstrap/dist/css/bootstrap.css'
+        './src/styles/**/*.css',
+        './node_modules/bootstrap/dist/css/bootstrap.css'
     ])
     .pipe(less())
     .pipe(autoprefixer({
